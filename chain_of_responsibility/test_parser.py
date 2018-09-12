@@ -30,7 +30,7 @@ class Test_Parser(unittest.TestCase):
        self.assertTrue(parser.process('arquivo.json'))
        self.assertTrue(parser.process('arquivo.xml'))
        self.assertTrue(parser.process('arquivo.csv'))
-       #self.assertTrue(parser.process('arquivo.xpto'))
+       self.assertFalse(parser.process('arquivo.xpto'))
 
 if __name__ == '__main__':
     unittest.main()
