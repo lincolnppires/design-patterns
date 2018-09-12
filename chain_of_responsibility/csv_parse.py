@@ -11,4 +11,4 @@ class CSV_parser(object):
             print('Parser CSV')
             return True
         else:
-            self.__successor.parse(file_name)
+            return self.__successor.parse(file_name)

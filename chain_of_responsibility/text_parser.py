@@ -11,4 +11,4 @@ class Text_parser(object):
             print('Parser txt')
             return True
         else:
-            self.__successor.parse(file_name)
+            return self.__successor.parse(file_name)

@@ -11,4 +11,4 @@ class XML_parser(object):
             print('Parser XML')
             return True
         else:
-            self.__successor.parse(file_name)
+            return self.__successor.parse(file_name)
