@@ -18,6 +18,8 @@ class Test_Phone_Decorator(unittest.TestCase):
        basic_android_iphone = Basic_Phone(Android_Phone(IPhone()))
        basic_android_iphone.printModel()
 
+       iphone_android_basic = IPhone(Android_Phone(Basic_Phone()))
+       iphone_android_basic.printModel()
 
 if __name__ == '__main__':
     unittest.main()
