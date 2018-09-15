@@ -8,10 +8,12 @@ class Test_Voucher_Factory(unittest.TestCase):
 
     def test_voucher_factory(self):
         voucher = Voucher_Factory().create(20)
-        print(voucher.html_message())
+        msg = voucher.html_message()
+        self.assertTrue('Food Voucher' in msg)
 
         voucher = Voucher_Factory().create(40)
-        print(voucher.html_message())
+        msg = voucher.html_message()
+        self.assertTrue('Clothes Voucher' in msg)
 
 
 if __name__ == '__main__':
